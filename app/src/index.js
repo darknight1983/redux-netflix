@@ -12,7 +12,6 @@ const store = createStore();
 
 window.store = store;
 
-console.log(store.getState());
 ReactDOM.render(
   <Provider store={store}>{routes}</Provider>,
   document.getElementById("root")

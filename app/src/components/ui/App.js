@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { app, test } from "./sharedStyles";
+import Movies from "./Movies";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
@@ -9,8 +9,8 @@ import {
   MuiThemeProvider
 } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
-import BKGLOGO from "../images/netflix-bkG.jpg";
-import NetflixLogo from "../images/Netflix_Logo_RGB.png";
+import BKGLOGO from "../../images/netflix-bkG.jpg";
+import NetflixLogo from "../../images/Netflix_Logo_RGB.png";
 
 const theme = createMuiTheme({
   palette: {
@@ -65,6 +65,7 @@ class App extends Component {
             </Toolbar>
           </AppBar>
         </div>
+        <Movies />
       </MuiThemeProvider>
     );
   }
