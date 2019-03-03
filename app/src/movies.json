@@ -94,7 +94,7 @@
     },
     {
       "title": "Tangled",
-      "cover": "/images/Tangled_poster.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/713DcPwGUXL._SY606_.jpg",
       "year": "2010",
       "cost": 260,
       "starring": [
@@ -111,7 +111,7 @@
     },
     {
       "title": "Spider-Man 3",
-      "cover": "/images/Spider-Man_3%2C_International_Poster.jpg",
+      "cover": "https://movieskiduniya.net/wp-content/uploads/2018/02/18754165.jpg",
       "year": "2007",
       "cost": 258,
       "starring": [
@@ -134,7 +134,7 @@
     },
     {
       "title": "Harry Potter and the Half-Blood Prince",
-      "cover": "/images/harry-potter-and-the-half-blood-prince.jpg",
+      "cover": "https://i.pinimg.com/originals/70/ed/7a/70ed7ab8e8bbb87833fd802f1c75fc55.jpg",
       "year": "2009",
       "cost": 250,
       "starring": [
@@ -157,7 +157,7 @@
     },
     {
       "title": "Spectre",
-      "cover": "/images/MV5BMjIwNTA1MDA2Ml5BMl5BanBnXkFtZTgwNzIzMTA5NDE@._V1_SX640_SY720_.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/61hDTk8M6YL._SY679_.jpg",
       "year": "2015",
       "cost": 245,
       "starring": [
@@ -180,7 +180,7 @@
     },
     {
       "title": "Avatar",
-      "cover": "/images/Avatar-Teaser-Poster.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/61OUGpUfAyL._SY679_.jpg",
       "year": "2009",
       "cost": 237,
       "starring": [
@@ -203,7 +203,7 @@
     },
     {
       "title": "The Dark Knight Rises",
-      "cover": "/images/Dark_knight_rises_poster.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51k98elC6mL.jpg",
       "year": "2012",
       "cost": 230,
       "starring": [
