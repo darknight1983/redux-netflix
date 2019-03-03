@@ -5,19 +5,31 @@ import { withStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 
 const styles = theme => ({
-  root: {}
+  root: {
+    backgroundColor: "#000"
+  },
+  logo: {
+    width: "50%",
+    height: 300
+  },
+  movie: {
+    marginTop: 40
+  }
 });
+
 const Movies = props => {
-  const { movies, classes } = props;
-  console.log(movies);
+  const { classes, movies } = props;
+
   return (
     <div className={classes.root}>
       <Grid container align="center">
         {movies.map(movie => (
-          <Grid item xs={3}>
+          <Grid item xs={4} className={classes.movie}>
             <div>
-              <img src={movie.cover} alt={movie.title} />
-              <h1>{movie.title}</h1>
+              <img src={movie.cover} className={classes.logo} />
+              <Typography variant="title" color="secondary">
+                {movie.title}
+              </Typography>
             </div>
           </Grid>
         ))}
@@ -27,7 +39,8 @@ const Movies = props => {
 };
 
 Movies.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  movies: PropTypes.array
 };
 
 export default withStyles(styles)(Movies);

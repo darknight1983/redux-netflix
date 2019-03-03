@@ -1,7 +1,7 @@
 import React from "react";
 import { Router, Route, IndexRoute } from "react-router";
 import createBrowserHistory from "history/createBrowserHistory";
-import App from "./components/ui/App";
+import App from "./components/containers/App";
 import Movies from "./components/containers/Movies";
 import Movie from "./components/containers/Movie";
 

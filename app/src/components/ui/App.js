@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Movies from "./Movies";
+import Movies from "../containers/Movies";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";

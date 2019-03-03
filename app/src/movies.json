@@ -2,7 +2,7 @@
   "movies": [
     {
       "title": "Pirates of the Caribbean: On Stranger Tides",
-      "cover": "/images/On_Stranger_Tides_Poster.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51uMwkBFBRL.jpg",
       "year": "2011",
       "cost": 378.5,
       "starring": [
@@ -25,7 +25,7 @@
     },
     {
       "title": "Pirates of the Caribbean: At World's End",
-      "cover": "/images/Pirates_AWE_Poster.jpg",
+      "cover": "https://c1.staticflickr.com/3/2157/2052003589_18d2339c2c.jpg",
       "year": "2007",
       "cost": 300,
       "starring": [
@@ -48,7 +48,7 @@
     },
     {
       "title": "Avengers: Age of Ultron",
-      "cover": "/images/Avengers_Age_of_Ultron.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/61w6MpiBSxL.jpg",
       "year": "2015",
       "cost": 279.9,
       "starring": [
@@ -71,7 +71,7 @@
     },
     {
       "title": "John Carter",
-      "cover": "/images/John_carter_poster.jpg",
+      "cover": "https://i.pinimg.com/originals/09/d5/46/09d546ba7b738fd70a59b036e422d793.jpg",
       "year": "2012",
       "cost": 263.7,
       "starring": [
