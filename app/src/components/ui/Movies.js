@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
+import Movie from "./Movie";
 
 const styles = theme => ({
   root: {
@@ -23,15 +24,8 @@ const Movies = props => {
   return (
     <div className={classes.root}>
       <Grid container align="center">
-        {movies.map(movie => (
-          <Grid item xs={4} className={classes.movie}>
-            <div>
-              <img src={movie.cover} className={classes.logo} />
-              <Typography variant="title" color="secondary">
-                {movie.title}
-              </Typography>
-            </div>
-          </Grid>
+        {movies.map((movie, i) => (
+          <Movie id={i} title={movie.title} cover={movie.cover} />
         ))}
       </Grid>
     </div>
