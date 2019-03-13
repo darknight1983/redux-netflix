@@ -19,13 +19,18 @@ const styles = theme => ({
 });
 
 const Movies = props => {
-  const { classes, movies } = props;
-
+  const { classes, movies, onGetMovie } = props;
+  console.log(props);
   return (
     <div className={classes.root}>
       <Grid container align="center">
         {movies.map((movie, i) => (
-          <Movie id={i} title={movie.title} cover={movie.cover} />
+          <Movie
+            id={i}
+            title={movie.title}
+            cover={movie.cover}
+            movie={onGetMovie}
+          />
         ))}
       </Grid>
     </div>
@@ -34,7 +39,8 @@ const Movies = props => {
 
 Movies.propTypes = {
   classes: PropTypes.object,
-  movies: PropTypes.array
+  movies: PropTypes.array,
+  onGetMovie: PropTypes.func
 };
 
 export default withStyles(styles)(Movies);

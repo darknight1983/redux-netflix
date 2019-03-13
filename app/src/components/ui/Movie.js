@@ -17,7 +17,8 @@ const styles = theme => ({
 });
 
 const Movie = props => {
-  const { classes, cover, title, id } = props;
+  const { classes, cover, title, id, movie } = props;
+  console.log(props);
   return (
     <Grid item xs={12} sm={2} md={4} className={classes.movie}>
       <Link
@@ -26,7 +27,7 @@ const Movie = props => {
           search: `?id=${id}`
         }}
       >
-        <div>
+        <div onClick={() => movie(id)}>
           <img src={cover} className={classes.logo} />
           <Typography variant="title" color="secondary">
             {title}
@@ -38,7 +39,8 @@ const Movie = props => {
 };
 
 Movie.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  movies: PropTypes.array
 };
 
 export default withStyles(styles)(Movie);

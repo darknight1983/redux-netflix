@@ -3,6 +3,8 @@ import { showMovie } from "./reducers";
 import { createStore, applyMiddleware } from "redux";
 import initialState from "../movies.json";
 
+console.log(initialState);
+
 const consoleMessage = store => next => action => {
   let result;
 

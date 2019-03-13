@@ -3,7 +3,9 @@ import MovieDetail from "../ui/MovieDetail";
 import { connect } from "react-redux";
 
 const mapStateToProps = (state, props) => {
-  console.log(props);
+  return {
+    movie: state.movie
+  };
 };
 
 const Container = connect(mapStateToProps)(MovieDetail);

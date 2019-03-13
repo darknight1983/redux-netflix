@@ -1,17 +1,15 @@
 import C from "../constants";
 
 export const showMovie = (state, action) => {
+  console.log(state);
   switch (action.type) {
     case C.FETCH_MOVIES:
       return {
         ...state,
-        all: action.movies
+        movies: action.movies
       };
     case C.FETCH_MOVIE:
-      return {
-        ...state,
-        current: action.movie
-      };
+      return Object.assign({}, state, { movie: state.movies[action.index] });
     default:
       return {
         ...state
