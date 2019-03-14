@@ -1,9 +1,12 @@
 import C from "../constants";
 import { showMovie } from "./reducers";
 import { createStore, applyMiddleware } from "redux";
-import initialState from "../movies.json";
+import Movies from "../movies.json";
 
-console.log(initialState);
+// Grab initialState from localStorage
+const initialState = localStorage["redux-store"]
+  ? JSON.parse(localStorage["redux-store"])
+  : Movies;
 
 const consoleMessage = store => next => action => {
   let result;

@@ -10,7 +10,14 @@ import createStore from "./store";
 // All the code for creating the store is encapsulated within the store folder
 const store = createStore();
 
+// Exposing the store on the window object
 window.store = store;
+
+store.subscribe(() => {
+  // Save state to localStorage
+  const state = JSON.stringify(store.getState());
+  localStorage["redux-store"] = state;
+});
 
 ReactDOM.render(
   <Provider store={store}>{routes}</Provider>,
