@@ -20,7 +20,7 @@ const Movie = props => {
   const { classes, cover, title, id, movie } = props;
   console.log(props);
   return (
-    <Grid item xs={12} sm={2} md={4} className={classes.movie}>
+    <Grid item xs={12} sm={6} md={4} className={classes.movie}>
       <Link
         to={{
           pathname: "/movieDetail",
